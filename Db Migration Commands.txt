@@ -1,0 +1,11 @@
+- install dotnet-ef
+- dotnet new tool-manifest in the root of the repository
+- dotnet tool install dotnet-ef in the same folder
+- run the following command to create a migration:
+- dotnet ef migrations add MigrationName --project src/Infrastructure/ --startup-project src/WebUI/ --output-dir Persistence/Migrations/
+
+- dotnet ef database update --project src/Infrastructure/ --startup-project src/WebApi/
+
+
+
+
